@@ -4,21 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eae6f1b9-b590-4e40-a5b5-8208561fc089" name="Changes" comment="added grid panel">
+    <list default="true" id="eae6f1b9-b590-4e40-a5b5-8208561fc089" name="Changes" comment="added player and computer panels">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bura/bura_card_game/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bura/bura_card_game/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bura/bura_card_game/Card_Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bura/bura_card_game/Desk.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bura/bura_card_game/Desk_Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bura/bura_card_game/GameController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bura/bura_card_game/cards/1D.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bura/bura_card_game/cards/2C.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bura/bura_card_game/cards/2D.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/bura/bura_card_game/blue_back.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/bura/bura_card_game/desk.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/bura/bura_card_game/desk.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/bura/bura_card_game/desk.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bura/bura_card_game/Bura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bura/bura_card_game/Bura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bura/bura_card_game/RenderedCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bura/bura_card_game/RenderedCard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,20 +43,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Bura.executor": "Run",
-    "Application.Desk_Controller.executor": "Run",
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Valery Chumakou/OneDrive/Documents/Java Projects/Bura_Card_Game",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Bura.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Desk_Controller.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Valery Chumakou/OneDrive/Documents/Java Projects/Bura_Card_Game&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="org.bura.bura_card_game" />
@@ -116,12 +105,21 @@
       <option name="project" value="LOCAL" />
       <updated>1718024456286</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added player and computer panels">
+      <option name="closed" value="true" />
+      <created>1718627452023</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718627452023</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="desk class created, background added" />
     <MESSAGE value="added grid panel" />
-    <option name="LAST_COMMIT_MESSAGE" value="added grid panel" />
+    <MESSAGE value="added player and computer panels" />
+    <option name="LAST_COMMIT_MESSAGE" value="added player and computer panels" />
   </component>
 </project>
