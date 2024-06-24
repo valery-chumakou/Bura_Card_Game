@@ -1,42 +1,22 @@
 package org.bura.bura_card_game;
 
-
-import javafx.scene.canvas.Canvas;
-import javafx.scene.image.Image;
+import javafx.scene.Node;
 import javafx.scene.image.ImageView;
 
+import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
 public class Card extends Canvas implements MouseListener {
 
-    public static final int JACK = 11, QUEEN = 12, KING = 13,
-    ACE = 14, MAX = 14, MIN = 2;
-    protected int card_value;
-    protected int real_value;
+    public static final int JACK = 11, QUEEN = 12, KING = 13, ACE = 14, MAX = 14, MIN = 2;
+    protected int faceValue;
+    protected int actualValue;
     protected char suit;
     protected boolean visible;
-    ImageView imageView;
-    private Image image;
+    private boolean selected;
+    private ImageView imageView;
 
-    public Card (int cv, int rv, char s, boolean v) {
-        card_value = (cv>=MIN && rv<=MAX)?cv:2;
-        real_value = rv;
-        if (s=='C' || s == 'D' || s == 'H' || s == 'S') {
-            suit = s;
-        } else {
-            suit = 'C';
-        }
-        visible = v;
-    }
-
-    public Card (int cv, char s, boolean v) {
-        this(cv, cv, s, v);
-    }
-
-    public boolean getVisible() {
-        return visible;
-    }
     public Card (ImageView imageView) {
         this.imageView = imageView;
     }
@@ -44,15 +24,51 @@ public class Card extends Canvas implements MouseListener {
         this.imageView = imageView;
     }
 
+    public ImageView getImageView() {
+        return imageView;
+    }
+
+    public void setSelected(boolean selected) {
+        this.selected = selected;
+    }
+
+    public boolean isSelected() {
+        return selected;
+    }
+
+
+    public Card(int fv, int av, char s, boolean v) {
+        faceValue = (fv >= MIN && fv <= MAX) ? fv : 2;
+        actualValue = av;
+        if (s == 'C' || s == 'D' || s == 'H' || s == 'S') {
+            suit = s;
+        } else {
+            suit = 'C';
+        }
+        visible = v;
+    }
+
+    public Card(int fv, char s, boolean v) {
+        this(fv, fv, s, v);
+    }
+
+    public void setVisible(boolean v) {
+        visible = v;
+    }
+
+    public boolean getVisible() {
+        return visible;
+    }
+
     public String toString() {
         if (!visible) {
             return "??";
         }
         String face;
-        if (card_value>=2 && card_value <=10) {
-            face = String.valueOf(card_value);
+        if (faceValue >= 2 && faceValue <= 10) {
+            face = String.valueOf(faceValue);
         } else {
-            switch (card_value) {
+            switch (faceValue) {
                 case JACK:
                     face = "J";
                     break;
@@ -73,64 +89,63 @@ public class Card extends Canvas implements MouseListener {
         return face;
     }
 
-    public  void setImage(Image image) {
-        this.image = image;
-        imageView = new ImageView(String.valueOf(image));
-        imageView.setFitWidth(50);
-        imageView.setFitHeight(75);
+    public void setValue(int av) {
+        actualValue=av;
+
     }
 
-    public void setValue (int rv) {
-        real_value = rv;
-    }
     public int getValue() {
-        return real_value;
+
+        return actualValue;
+
     }
-    public int getCard_value() {
-        return card_value;
+    public int getFaceValue() {
+
+        return faceValue;
+
     }
     public char getSuit() {
+
         return suit;
-    }
 
+    }
     public static char[] getSuits() {
-        char[] suits = {'C', 'D', 'H', 'S'};
+
+        char[] suits={'C','D','H','S'};
         return suits;
-        }
 
-    public boolean isPicturedCard() {
-        if (card_value >= JACK && card_value <= KING) {
+    }
+
+    public boolean isPictureCard() {
+
+        if(faceValue>=JACK&&faceValue<=KING){
             return true;
-        }
-        return false;
+
+        } else return false;
 
     }
 
-    public ImageView getImageView() {
-        return imageView;
-    }
-    @Override
+
     public void mouseClicked(MouseEvent e) {
 
-    }
+        System.out.println("Mouse clicked in card");
 
-    @Override
+    }
     public void mousePressed(MouseEvent e) {
 
     }
 
-    @Override
     public void mouseReleased(MouseEvent e) {
 
     }
 
-    @Override
     public void mouseEntered(MouseEvent e) {
 
     }
 
-    @Override
     public void mouseExited(MouseEvent e) {
 
     }
+
+
 }

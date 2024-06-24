@@ -2,8 +2,9 @@ package org.bura.bura_card_game;
 
 import java.util.Random;
 
-public class RandomCardSelection extends CardController{
-    public RandomCardSelection () {
+public class RandomCardDeck extends CardDeck {
+
+    public RandomCardDeck() {
         super();
         shuffle();
     }
@@ -13,8 +14,7 @@ public class RandomCardSelection extends CardController{
         Random rand = new Random();
         int cIndex;
         boolean placed;
-
-        for (int c = 0; c< cards.length; c++) {
+        for (int c=0; c < cards.length; c++) {
             do {
                 placed = false;
                 cIndex = rand.nextInt(cards.length);
@@ -22,13 +22,12 @@ public class RandomCardSelection extends CardController{
                     shuffled[cIndex] = cards[c];
                     placed = true;
                 }
-            }
-            while (!placed);
+            } while(!placed);
         }
-
         cards = shuffled;
         top = 0;
     }
+
     public void reset() {
         super.reset();
         shuffle();

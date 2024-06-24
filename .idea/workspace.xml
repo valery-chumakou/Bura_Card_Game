@@ -4,10 +4,50 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eae6f1b9-b590-4e40-a5b5-8208561fc089" name="Changes" comment="added player and computer panels">
+    <list default="true" id="eae6f1b9-b590-4e40-a5b5-8208561fc089" name="Changes" comment="getAdditional card and computerMove methods were added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bura/bura_card_game/Bura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bura/bura_card_game/Bura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bura/bura_card_game/RenderedCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bura/bura_card_game/RenderedCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/10c.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/10d.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/10h.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/10s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/6c.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/6d.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/6h.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/6s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/7c.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/7d.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/7h.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/7s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/8c.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/8d.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/8h.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/8s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/9c.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/9d.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/9h.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/9s.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ac.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ad.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ah.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/as.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/jc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/jd.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/jh.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/js.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/kc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/kd.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/kh.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ks.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/qc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/qd.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/qh.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/qs.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bura/bura_card_game/Bura.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bura/bura_card_game/BuraController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bura/bura_card_game/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bura/bura_card_game/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bura/bura_card_game/CardController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bura/bura_card_game/RandomCardSelection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bura/bura_card_game/RenderedCard.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +57,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -45,7 +86,9 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.BlackjackApp.executor&quot;: &quot;Run&quot;,
     &quot;Application.Bura.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BuraApp.executor&quot;: &quot;Run&quot;,
     &quot;Application.Desk_Controller.executor&quot;: &quot;Run&quot;,
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -58,6 +101,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.bura.bura_card_game" />
+    </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="org.bura.bura_card_game" />
     </key>
@@ -113,13 +159,22 @@
       <option name="project" value="LOCAL" />
       <updated>1718627452023</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="getAdditional card and computerMove methods were added">
+      <option name="closed" value="true" />
+      <created>1718714350569</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718714350569</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="desk class created, background added" />
     <MESSAGE value="added grid panel" />
     <MESSAGE value="added player and computer panels" />
-    <option name="LAST_COMMIT_MESSAGE" value="added player and computer panels" />
+    <MESSAGE value="getAdditional card and computerMove methods were added" />
+    <option name="LAST_COMMIT_MESSAGE" value="getAdditional card and computerMove methods were added" />
   </component>
 </project>
