@@ -1,24 +1,23 @@
 package org.bura.bura_card_game;
-
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-
-import javax.swing.*;
 import java.awt.*;
-import java.awt.image.ImageObserver;
-
 
 public class RenderedCard extends Card {
+
     protected boolean isHighSuit;
     protected Image image;
+
+    protected Image offscreen;
     protected Dimension dim;
 
-    public RenderedCard(int cv, char s, boolean v) {
-        super(cv, s, v);
+    public RenderedCard(int fv, char s, boolean v) {
+        super(fv, s, v);
+        isHighSuit = false;
+        setSize(73, 97);
+    }
 
-
-        dim = new Dimension();
-        dim.setSize(73, 97);
+    public RenderedCard(int fv, char s, boolean v, boolean hs) {
+        super(fv, s, v);
+        isHighSuit = hs;
     }
 
     public void setHighSuit(boolean hs) {
@@ -29,15 +28,19 @@ public class RenderedCard extends Card {
         return isHighSuit;
     }
 
+    public void paint(Graphics g) {
+        if (!visible) {
+            image = Toolkit.getDefaultToolkit().getImage("back_image/b3.gif");
+            g.drawImage(image, 0, 0, this);
+        } else {
 
+            String s = "back_image/" + this.toString() + ".gif";
+            image = Toolkit.getDefaultToolkit().getImage(s);
+            g.drawImage(image, 0, 0, this);
+        }
     }
 
-
-
-
-
-
-
-
-
-
+    public void update(Graphics g) {
+        paint(g);
+    }
+}
